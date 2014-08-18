@@ -22,6 +22,10 @@
 		B0EC018D199E2CE300430DD5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC018C199E2CE300430DD5 /* MainInterface.storyboard */; };
 		B0EC0190199E2CE300430DD5 /* PhotoEdit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0EC0180199E2CE300430DD5 /* PhotoEdit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B0EC0197199E382400430DD5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EC0196199E382400430DD5 /* CoreImage.framework */; };
+		B0EFFAD4199E61A400BA8972 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EFFAD3199E61A400BA8972 /* NotificationCenter.framework */; };
+		B0EFFADA199E61A400BA8972 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EFFAD9199E61A400BA8972 /* TodayViewController.m */; };
+		B0EFFADC199E61A400BA8972 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EFFADB199E61A400BA8972 /* MainInterface.storyboard */; };
+		B0EFFADF199E61A400BA8972 /* TodayInfo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0EFFAD2199E61A400BA8972 /* TodayInfo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,20 @@
 			remoteGlobalIDString = B0EC017F199E2CE300430DD5;
 			remoteInfo = PhotoEdit;
 		};
+		B0EFFADD199E61A400BA8972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0EC0138199DF2F400430DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0EFFAD1199E61A400BA8972;
+			remoteInfo = TodayInfo;
+		};
+		B0EFFAE0199E61A400BA8972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0EC0138199DF2F400430DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0EFFAD1199E61A400BA8972;
+			remoteInfo = TodayInfo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +88,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B0EC0175199DF3E900430DD5 /* WebUpperCase.appex in Embed App Extensions */,
+				B0EFFADF199E61A400BA8972 /* TodayInfo.appex in Embed App Extensions */,
 				B0EC0190199E2CE300430DD5 /* PhotoEdit.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -103,6 +122,12 @@
 		B0EC018A199E2CE300430DD5 /* PhotoEditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditingViewController.m; sourceTree = "<group>"; };
 		B0EC018C199E2CE300430DD5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		B0EC0196199E382400430DD5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B0EFFAD2199E61A400BA8972 /* TodayInfo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayInfo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0EFFAD3199E61A400BA8972 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B0EFFAD7199E61A400BA8972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EFFAD8199E61A400BA8972 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		B0EFFAD9199E61A400BA8972 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		B0EFFADB199E61A400BA8972 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +162,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0EFFACF199E61A400BA8972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EFFAD4199E61A400BA8972 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +180,7 @@
 				B0EC0159199DF2F500430DD5 /* ExtKitchenSinkTests */,
 				B0EC016B199DF3E900430DD5 /* WebUpperCase */,
 				B0EC0186199E2CE300430DD5 /* PhotoEdit */,
+				B0EFFAD5199E61A400BA8972 /* TodayInfo */,
 				B0EC0181199E2CE300430DD5 /* Frameworks */,
 				B0EC0141199DF2F400430DD5 /* Products */,
 			);
@@ -159,6 +193,7 @@
 				B0EC0156199DF2F500430DD5 /* ExtKitchenSinkTests.xctest */,
 				B0EC016A199DF3E900430DD5 /* WebUpperCase.appex */,
 				B0EC0180199E2CE300430DD5 /* PhotoEdit.appex */,
+				B0EFFAD2199E61A400BA8972 /* TodayInfo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +263,7 @@
 				B0EC0196199E382400430DD5 /* CoreImage.framework */,
 				B0EC0182199E2CE300430DD5 /* PhotosUI.framework */,
 				B0EC0184199E2CE300430DD5 /* Photos.framework */,
+				B0EFFAD3199E61A400BA8972 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -251,6 +287,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B0EFFAD5199E61A400BA8972 /* TodayInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B0EFFAD8199E61A400BA8972 /* TodayViewController.h */,
+				B0EFFAD9199E61A400BA8972 /* TodayViewController.m */,
+				B0EFFADB199E61A400BA8972 /* MainInterface.storyboard */,
+				B0EFFAD6199E61A400BA8972 /* Supporting Files */,
+			);
+			path = TodayInfo;
+			sourceTree = "<group>";
+		};
+		B0EFFAD6199E61A400BA8972 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0EFFAD7199E61A400BA8972 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +325,8 @@
 				B0EC0177199DF3E900430DD5 /* PBXTargetDependency */,
 				B0EC018F199E2CE300430DD5 /* PBXTargetDependency */,
 				B0EC0192199E2CE300430DD5 /* PBXTargetDependency */,
+				B0EFFADE199E61A400BA8972 /* PBXTargetDependency */,
+				B0EFFAE1199E61A400BA8972 /* PBXTargetDependency */,
 			);
 			name = ExtKitchenSink;
 			productName = ExtKitchenSink;
@@ -328,6 +385,23 @@
 			productReference = B0EC0180199E2CE300430DD5 /* PhotoEdit.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B0EFFAD1199E61A400BA8972 /* TodayInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0EFFAE4199E61A400BA8972 /* Build configuration list for PBXNativeTarget "TodayInfo" */;
+			buildPhases = (
+				B0EFFACE199E61A400BA8972 /* Sources */,
+				B0EFFACF199E61A400BA8972 /* Frameworks */,
+				B0EFFAD0199E61A400BA8972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayInfo;
+			productName = TodayInfo;
+			productReference = B0EFFAD2199E61A400BA8972 /* TodayInfo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -350,6 +424,9 @@
 					B0EC017F199E2CE300430DD5 = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					B0EFFAD1199E61A400BA8972 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = B0EC013B199DF2F400430DD5 /* Build configuration list for PBXProject "ExtKitchenSink" */;
@@ -369,6 +446,7 @@
 				B0EC0155199DF2F500430DD5 /* ExtKitchenSinkTests */,
 				B0EC0169199DF3E900430DD5 /* WebUpperCase */,
 				B0EC017F199E2CE300430DD5 /* PhotoEdit */,
+				B0EFFAD1199E61A400BA8972 /* TodayInfo */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +481,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0EC018D199E2CE300430DD5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EFFAD0199E61A400BA8972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EFFADC199E61A400BA8972 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +529,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0EFFACE199E61A400BA8972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EFFADA199E61A400BA8972 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -470,6 +564,16 @@
 			isa = PBXTargetDependency;
 			target = B0EC017F199E2CE300430DD5 /* PhotoEdit */;
 			targetProxy = B0EC0191199E2CE300430DD5 /* PBXContainerItemProxy */;
+		};
+		B0EFFADE199E61A400BA8972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0EFFAD1199E61A400BA8972 /* TodayInfo */;
+			targetProxy = B0EFFADD199E61A400BA8972 /* PBXContainerItemProxy */;
+		};
+		B0EFFAE1199E61A400BA8972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0EFFAD1199E61A400BA8972 /* TodayInfo */;
+			targetProxy = B0EFFAE0199E61A400BA8972 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -667,6 +771,30 @@
 			};
 			name = Release;
 		};
+		B0EFFAE2199E61A400BA8972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayInfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0EFFAE3199E61A400BA8972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayInfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -686,6 +814,7 @@
 				B0EC0162199DF2F500430DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0EC0163199DF2F500430DD5 /* Build configuration list for PBXNativeTarget "ExtKitchenSinkTests" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +823,7 @@
 				B0EC0165199DF2F500430DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0EC0178199DF3E900430DD5 /* Build configuration list for PBXNativeTarget "WebUpperCase" */ = {
 			isa = XCConfigurationList;
@@ -702,12 +832,22 @@
 				B0EC017A199DF3E900430DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0EC0193199E2CE300430DD5 /* Build configuration list for PBXNativeTarget "PhotoEdit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0EC0194199E2CE300430DD5 /* Debug */,
 				B0EC0195199E2CE300430DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0EFFAE4199E61A400BA8972 /* Build configuration list for PBXNativeTarget "TodayInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0EFFAE2199E61A400BA8972 /* Debug */,
+				B0EFFAE3199E61A400BA8972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
