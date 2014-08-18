@@ -17,3 +17,4 @@ TodayInfo
 ---------
 
 Simple Today Widget that shows the current time.
+=======
