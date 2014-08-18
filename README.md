@@ -17,3 +17,8 @@ TodayInfo
 ---------
 
 Simple Today Widget that shows the current time.
+
+ShareToNil
+----------
+
+Share extension that uses SLComposeServiceViewController to share content to nowhere.

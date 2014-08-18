@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0CECD2419A24B550052319C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CECD2319A24B550052319C /* ShareViewController.m */; };
+		B0CECD2619A24B550052319C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CECD2519A24B550052319C /* MainInterface.storyboard */; };
+		B0CECD2919A24B550052319C /* ShareToNil.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0CECD1E19A24B550052319C /* ShareToNil.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B0EC0146199DF2F400430DD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC0145199DF2F400430DD5 /* main.m */; };
 		B0EC0149199DF2F400430DD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC0148199DF2F400430DD5 /* AppDelegate.m */; };
 		B0EC014C199DF2F400430DD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC014B199DF2F400430DD5 /* ViewController.m */; };
@@ -29,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B0CECD2719A24B550052319C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0EC0138199DF2F400430DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0CECD1D19A24B550052319C;
+			remoteInfo = ShareToNil;
+		};
+		B0CECD2A19A24B550052319C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0EC0138199DF2F400430DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0CECD1D19A24B550052319C;
+			remoteInfo = ShareToNil;
+		};
 		B0EC0157199DF2F500430DD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0EC0138199DF2F400430DD5 /* Project object */;
@@ -88,6 +105,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B0EC0175199DF3E900430DD5 /* WebUpperCase.appex in Embed App Extensions */,
+				B0CECD2919A24B550052319C /* ShareToNil.appex in Embed App Extensions */,
 				B0EFFADF199E61A400BA8972 /* TodayInfo.appex in Embed App Extensions */,
 				B0EC0190199E2CE300430DD5 /* PhotoEdit.appex in Embed App Extensions */,
 			);
@@ -97,6 +115,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B0CECD1E19A24B550052319C /* ShareToNil.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareToNil.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CECD2119A24B550052319C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0CECD2219A24B550052319C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		B0CECD2319A24B550052319C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		B0CECD2519A24B550052319C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		B0EC0140199DF2F400430DD5 /* ExtKitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtKitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EC0144199DF2F400430DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0EC0145199DF2F400430DD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +154,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B0CECD1B19A24B550052319C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0EC013D199DF2F400430DD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +203,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0CECD1F19A24B550052319C /* ShareToNil */ = {
+			isa = PBXGroup;
+			children = (
+				B0CECD2219A24B550052319C /* ShareViewController.h */,
+				B0CECD2319A24B550052319C /* ShareViewController.m */,
+				B0CECD2519A24B550052319C /* MainInterface.storyboard */,
+				B0CECD2019A24B550052319C /* Supporting Files */,
+			);
+			path = ShareToNil;
+			sourceTree = "<group>";
+		};
+		B0CECD2019A24B550052319C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0CECD2119A24B550052319C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B0EC0137199DF2F400430DD5 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +230,7 @@
 				B0EC016B199DF3E900430DD5 /* WebUpperCase */,
 				B0EC0186199E2CE300430DD5 /* PhotoEdit */,
 				B0EFFAD5199E61A400BA8972 /* TodayInfo */,
+				B0CECD1F19A24B550052319C /* ShareToNil */,
 				B0EC0181199E2CE300430DD5 /* Frameworks */,
 				B0EC0141199DF2F400430DD5 /* Products */,
 			);
@@ -194,6 +244,7 @@
 				B0EC016A199DF3E900430DD5 /* WebUpperCase.appex */,
 				B0EC0180199E2CE300430DD5 /* PhotoEdit.appex */,
 				B0EFFAD2199E61A400BA8972 /* TodayInfo.appex */,
+				B0CECD1E19A24B550052319C /* ShareToNil.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,6 +360,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B0CECD1D19A24B550052319C /* ShareToNil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0CECD2E19A24B550052319C /* Build configuration list for PBXNativeTarget "ShareToNil" */;
+			buildPhases = (
+				B0CECD1A19A24B550052319C /* Sources */,
+				B0CECD1B19A24B550052319C /* Frameworks */,
+				B0CECD1C19A24B550052319C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareToNil;
+			productName = ShareToNil;
+			productReference = B0CECD1E19A24B550052319C /* ShareToNil.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		B0EC013F199DF2F400430DD5 /* ExtKitchenSink */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0EC0160199DF2F500430DD5 /* Build configuration list for PBXNativeTarget "ExtKitchenSink" */;
@@ -327,6 +395,8 @@
 				B0EC0192199E2CE300430DD5 /* PBXTargetDependency */,
 				B0EFFADE199E61A400BA8972 /* PBXTargetDependency */,
 				B0EFFAE1199E61A400BA8972 /* PBXTargetDependency */,
+				B0CECD2819A24B550052319C /* PBXTargetDependency */,
+				B0CECD2B19A24B550052319C /* PBXTargetDependency */,
 			);
 			name = ExtKitchenSink;
 			productName = ExtKitchenSink;
@@ -411,6 +481,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Thomas Eichmann";
 				TargetAttributes = {
+					B0CECD1D19A24B550052319C = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					B0EC013F199DF2F400430DD5 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -447,11 +520,20 @@
 				B0EC0169199DF3E900430DD5 /* WebUpperCase */,
 				B0EC017F199E2CE300430DD5 /* PhotoEdit */,
 				B0EFFAD1199E61A400BA8972 /* TodayInfo */,
+				B0CECD1D19A24B550052319C /* ShareToNil */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B0CECD1C19A24B550052319C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CECD2619A24B550052319C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0EC013E199DF2F400430DD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +577,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B0CECD1A19A24B550052319C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CECD2419A24B550052319C /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0EC013C199DF2F400430DD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,6 +630,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B0CECD2819A24B550052319C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0CECD1D19A24B550052319C /* ShareToNil */;
+			targetProxy = B0CECD2719A24B550052319C /* PBXContainerItemProxy */;
+		};
+		B0CECD2B19A24B550052319C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0CECD1D19A24B550052319C /* ShareToNil */;
+			targetProxy = B0CECD2A19A24B550052319C /* PBXContainerItemProxy */;
+		};
 		B0EC0158199DF2F500430DD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0EC013F199DF2F400430DD5 /* ExtKitchenSink */;
@@ -589,6 +689,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B0CECD2C19A24B550052319C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareToNil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0CECD2D19A24B550052319C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareToNil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		B0EC015E199DF2F500430DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -798,6 +922,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B0CECD2E19A24B550052319C /* Build configuration list for PBXNativeTarget "ShareToNil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CECD2C19A24B550052319C /* Debug */,
+				B0CECD2D19A24B550052319C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B0EC013B199DF2F400430DD5 /* Build configuration list for PBXProject "ExtKitchenSink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -850,6 +982,7 @@
 				B0EFFAE3199E61A400BA8972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
