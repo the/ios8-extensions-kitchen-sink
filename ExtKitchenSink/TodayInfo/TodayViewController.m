@@ -27,10 +27,16 @@
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler
 {
-    NSDate *now = [NSDate date];
-    self.label.text = [self.dateFormatter stringFromDate:now];
+    [self refresh];
 
     completionHandler(NCUpdateResultNewData);
 }
+
+- (IBAction)refresh
+{
+    NSDate *now = [NSDate date];
+    self.label.text = [self.dateFormatter stringFromDate:now];
+}
+
 
 @end
